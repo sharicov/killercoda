@@ -1,5 +1,20 @@
-### Get local IP:
-https://[[HOST_SUBDOMAIN]]-8080-[[KILLERCODA_HOST]].environments.killercoda.com
+### Create file to download
+touch download_file
+
+### Run web server on 8080
+`python2 -m SimpleHTTPServer 8080`{{execute}}
+
+### Browse files:
+[Browse files]({{TRAFFIC_HOST1_8080}})
+
+
+### Download file:
+[Download file]({{TRAFFIC_HOST1_8080}})/download_file
+
+### Browse ports:
+
+[ACCESS PORTS]({{TRAFFIC_SELECTOR}})
+
 
 ### Install build packages
 `sudo apt install -y build-essential libncurses5-dev libncursesw5-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python ncdu atop`{{exec}}
