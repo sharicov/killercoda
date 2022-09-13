@@ -4,7 +4,7 @@
 ### Run web server on 8080
 
 ```
-sudo apt install python2 
+sudo apt install python2 -y
 
 python2 -m SimpleHTTPServer 8080
 ```{{exec}}
