@@ -1,1 +1,1 @@
-Let's learn how users can copy or exec code blocks
+Let's learn how users can build OpenWRT images for x86 64bit architecture
