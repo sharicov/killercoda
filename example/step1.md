@@ -1,5 +1,5 @@
 ### Get local IP:
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
+https://[[HOST_SUBDOMAIN]]-8080-[[KILLERCODA_HOST]].environments.killercoda.com
 
 ### Install build packages
 `sudo apt install -y build-essential libncurses5-dev libncursesw5-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python ncdu atop`{{exec}}
