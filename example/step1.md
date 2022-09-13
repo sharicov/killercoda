@@ -1,20 +1,25 @@
 ### Create file to download
 `touch download_file`{{exec}}
+`mkdir test`{{exec}}
 
 ### Run web server on 8080
 
-```
-sudo apt install python2 -y
+`sudo apt install python2 -y`{{exec}}
 
-python2 -m SimpleHTTPServer 8080
-```{{exec}}
+
+`python2 -m SimpleHTTPServer 8080`{{exec}}
+
 
 ### Browse files:
 [Browse files]({{TRAFFIC_HOST1_8080}})
 
 
 ### Download file:
-[Download file]({{TRAFFIC_HOST1_8080/download_file}})
+[Download file]({{TRAFFIC_HOST1_8080:/download_file}})
+
+### browse folder:
+[Download file]({{TRAFFIC_HOST1_8080/test}})
+
 
 ### Browse ports:
 
