@@ -1,5 +1,5 @@
 ### Create file to download
-touch download_file
+`touch download_file`{{exec}}
 
 ### Run web server on 8080
 `python2 -m SimpleHTTPServer 8080`{{execute}}
