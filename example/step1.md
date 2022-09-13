@@ -14,7 +14,7 @@ python2 -m SimpleHTTPServer 8080
 
 
 ### Download file:
-[Download file]({{TRAFFIC_HOST1_8080}})/download_file
+[Download file]({{TRAFFIC_HOST1_8080/download_file}})
 
 ### Browse ports:
 
