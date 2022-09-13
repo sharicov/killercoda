@@ -1,5 +1,5 @@
 ### Install build packages
-`sudo apt install -y build-essential libncurses5-dev libncursesw5-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python ncdu atop`{{exec}}
+`sudo apt install -y build-essential libncurses5-dev libncursesw5-dev zlib1g-dev gawk git gettext libssl-dev xsltproc rsync wget unzip python ncdu atop python2`{{exec}}
 
 ### Download stable version of image builder for x86 64bit architecture:
 `wget https://downloads.openwrt.org/releases/22.03.0/targets/x86/64/openwrt-imagebuilder-22.03.0-x86-64.Linux-x86_64.tar.xz`{{exec}}
@@ -25,6 +25,14 @@ cd openwrt-imagebuilder-*/
 
 `find . -name *.gz`{{exec}}
 
-Copy to local PC (use https://whatismyip.com to get your local IP address):
+### Copy to local PC (use https://whatismyip.com to get your local IP address):
+
+`python2 -m SimpleHTTPServer 8080`{{exec}}
+
+
+### Browse files:
+[Browse files]({{TRAFFIC_HOST1_8080}})
+
+### Or manually:
 
 `scp bin/targets/x86/64/openwrt-22.03.0-x86-64-generic-ext4-combined-efi.img.gz user@HomeMachineIP:/Directory`{{exec}}
