@@ -1,6 +1,6 @@
 {
-  "title": "Code Actions",
-  "description": "Let users copy or exec code blocks",
+  "title": "OpenWRT image builder",
+  "description": "Build OpenWRT image",
   "details": {
     "intro": {
       "text": "intro.md"
