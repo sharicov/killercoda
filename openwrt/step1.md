@@ -37,3 +37,8 @@ cd openwrt-imagebuilder-*/
 ### Or manually copy to local PC (use https://whatismyip.com to get your local IP address):
 
 `scp bin/targets/x86/64/openwrt-22.03.0-x86-64-generic-ext4-combined-efi.img.gz user@HomeMachineIP:/Directory`{{exec}}
+
+### Flash to USB with Rufus: https://github.com/pbatard/rufus/releases/download/v3.20/rufus-3.20p.exe
+
+### Username: root
+### Password(no password):
