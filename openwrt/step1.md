@@ -28,14 +28,11 @@ cd openwrt-imagebuilder-*/
 
 `find . -name *.gz`{{exec}}
 
-### Copy to local PC (use https://whatismyip.com to get your local IP address):
+### Browse files in bin/targets/x86/64:
 
 `python2 -m SimpleHTTPServer 8080`{{exec}}
-
-
-### Browse files:
 [Browse files]({{TRAFFIC_HOST1_8080}})
 
-### Or manually:
+### Or manually copy to local PC (use https://whatismyip.com to get your local IP address):
 
 `scp bin/targets/x86/64/openwrt-22.03.0-x86-64-generic-ext4-combined-efi.img.gz user@HomeMachineIP:/Directory`{{exec}}
