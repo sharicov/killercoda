@@ -15,8 +15,12 @@ cd openwrt-imagebuilder-*/
 `make info`{{exec}}
 
 ### Set size of OpenWRT partition (ex.304MB without docker/504 with docker/1.4G max for killercoda - RAM limitation):
+### Choose one option (304MB without docker/504MB with docker/1.4GB max for killercoda - RAM limitation):
+`sed -i 's/CONFIG_TARGET_ROOTFS_PARTSIZE=.*/CONFIG_TARGET_ROOTFS_PARTSIZE=304/' .config`{{exec}}
+
 `sed -i 's/CONFIG_TARGET_ROOTFS_PARTSIZE=.*/CONFIG_TARGET_ROOTFS_PARTSIZE=504/' .config`{{exec}}
 
+`sed -i 's/CONFIG_TARGET_ROOTFS_PARTSIZE=.*/CONFIG_TARGET_ROOTFS_PARTSIZE=1504/' .config`{{exec}}
 ## Add custom ipk package (ex. Disk Man):
 `wget -P packages -O luci-app-diskman_v0.2.11_all.ipk https://github.com/lisaac/luci-app-diskman/releases/download/v0.2.11/luci-app-diskman_v0.2.11_all.ipk`{{exec}} 
 
