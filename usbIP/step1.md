@@ -61,6 +61,10 @@ mount /dev/sda1 /media/usb
 ls /media/usb
 ```{{exec}}
 
+Test usb speed:
+
+`hdparm -tTv /dev/sda`{{exec}}
+
 ### Useful info:
 To uninstall on linux:
 
