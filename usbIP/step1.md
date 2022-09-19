@@ -45,7 +45,21 @@ On killercoda machine run:
 
 `usbclnt -add-server YourServerIPFromTailscaleTray:32032`{{}}
 
-On machine with physical USB (server): Remote Control/ Connect USB device to USB Client/Provide remote machine tailscale address.
+On machine with physical USB (server): Remote Control/ Connect USB device to USB Client/Click on IP in the list starts with 100.
+
+On remote killercoda machine usb will appear as sda
+
+`lsblk -f`{{exec}}
+
+'fdisk -l /dev/sda'{{exec}}
+
+```
+mkdir /media/usb
+
+mount /dev/sda1 /media/usb
+
+ls /media/usb
+```{{exec}}
 
 ### Useful info:
 To uninstall on linux:
